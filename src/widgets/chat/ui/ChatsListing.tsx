@@ -1,5 +1,5 @@
-import { ObjectCard, useObjectStore } from "@/entities/object";
 import React from "react";
+import { ObjectCard, useObjectStore } from "@/entities/object";
 import styles from "./chat.module.scss";
 export const ChatsListing = () => {
 	const { objects } = useObjectStore();

@@ -52,14 +52,3 @@
 		}
 	}
 }
-.chatCard {
-	cursor: pointer;
-	padding: 8px;
-	display: flex;
-	justify-content: space-between;
-	border: 1px solid #b5b5b5;
-	align-items: center;
-	&:hover {
-		background-color: #e0e0e0;
-	}
-}
