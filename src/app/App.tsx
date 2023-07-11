@@ -1,7 +1,9 @@
-import { Chat } from "@/entities/chat";
-import { useObject } from "@/entities/object";
 import { Container } from "@/shared/ui/Container";
 import { Loader } from "@/shared/ui/Loader";
+
+import { Chat } from "@/widgets/chat";
+
+import { useObject } from "@/entities/object";
 
 function App() {
 	const { loading } = useObject();

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import styles from "./objectCard.module.scss";
 import { Badge } from "@/shared/ui/Badge";
-import { ChatCard } from "@/entities/chat/ui/ChatCard";
+import { ChatCard } from "./ChatCard";
+// import { ChatCard } from "@/entities/chat/ui/ChatCard";
 
 interface IProps {
 	name: string;
 	chats: IChat[];
 }
+
 export const ObjectCard: React.FC<IProps> = ({ chats, name }) => {
 	const [active, setActive] = useState(false);
 	const totalUnreadedMessages = chats
