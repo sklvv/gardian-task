@@ -1,0 +1,27 @@
+.objectCard {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	border: 1px solid #cdcdcd;
+	cursor: pointer;
+	margin-bottom: 8px;
+	&Name {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		justify-content: space-between;
+		font-size: 18px;
+	}
+
+	&Dropdown {
+		display: none;
+		&Active {
+			padding: 0px 8px;
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			margin-bottom: 8px;
+		}
+	}
+}
