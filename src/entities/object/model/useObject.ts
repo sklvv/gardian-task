@@ -3,9 +3,8 @@ import { getObjectsInfo } from "@/shared/api/requests";
 import { useObjectStore } from "..";
 
 export const useObject = () => {
-	const [objects, setObjects] = useState<IObject[]>([]);
 	const [loading, setLoading] = useState(true);
-	const { setNewObjects } = useObjectStore();
+	const { setNewObjects, objects } = useObjectStore();
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -16,5 +15,5 @@ export const useObject = () => {
 		fetchData().catch(e => console.warn(e));
 	}, []);
 
-	return { objects, loading, setObjects };
+	return { objects, loading };
 };
